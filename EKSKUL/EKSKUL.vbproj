@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3D1775B-46A5-4A94-9B0E-A81902549A7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EKSKUL.My.MyApplication</StartupObject>
+    <RootNamespace>EKSKUL</RootNamespace>
+    <AssemblyName>EKSKUL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>EKSKUL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>EKSKUL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Nav.Designer.vb">
+      <DependentUpon>Admin_Nav.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Nav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database.vb" />
+    <Compile Include="EKSKULDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet10.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EKSKULDataSet9.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EKSKULDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Guru_Nav.Designer.vb">
+      <DependentUpon>Guru_Nav.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Guru_Nav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.vb">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="recapt.Designer.vb">
+      <DependentUpon>recapt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recapt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siswa_Nav.Designer.vb">
+      <DependentUpon>Siswa_Nav.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Siswa_Nav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.vb">
+      <DependentUpon>test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin_Nav.resx">
+      <DependentUpon>Admin_Nav.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guru_Nav.resx">
+      <DependentUpon>Guru_Nav.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recapt.resx">
+      <DependentUpon>recapt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siswa_Nav.resx">
+      <DependentUpon>Siswa_Nav.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EKSKULDataSet.xsc">
+      <DependentUpon>EKSKULDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet.xss">
+      <DependentUpon>EKSKULDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet1.xsc">
+      <DependentUpon>EKSKULDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet1.xss">
+      <DependentUpon>EKSKULDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet10.xsc">
+      <DependentUpon>EKSKULDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet10.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet10.xss">
+      <DependentUpon>EKSKULDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet11.xsc">
+      <DependentUpon>EKSKULDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet11.xss">
+      <DependentUpon>EKSKULDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet2.xsc">
+      <DependentUpon>EKSKULDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet2.xss">
+      <DependentUpon>EKSKULDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet3.xsc">
+      <DependentUpon>EKSKULDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet3.xss">
+      <DependentUpon>EKSKULDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet4.xsc">
+      <DependentUpon>EKSKULDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet4.xss">
+      <DependentUpon>EKSKULDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet5.xsc">
+      <DependentUpon>EKSKULDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet5.xss">
+      <DependentUpon>EKSKULDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet6.xsc">
+      <DependentUpon>EKSKULDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet6.xss">
+      <DependentUpon>EKSKULDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet7.xsc">
+      <DependentUpon>EKSKULDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet7.xss">
+      <DependentUpon>EKSKULDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet8.xsc">
+      <DependentUpon>EKSKULDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet8.xss">
+      <DependentUpon>EKSKULDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet9.xsc">
+      <DependentUpon>EKSKULDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="EKSKULDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EKSKULDataSet9.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EKSKULDataSet9.xss">
+      <DependentUpon>EKSKULDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profil.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

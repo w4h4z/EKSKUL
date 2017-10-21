@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EKSKULDataSet9" targetNamespace="http://tempuri.org/EKSKULDataSet9.xsd" xmlns:mstns="http://tempuri.org/EKSKULDataSet9.xsd" xmlns="http://tempuri.org/EKSKULDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="EKSKULConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EKSKULConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EKSKUL.My.MySettings.GlobalReference.Default.EKSKULConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataEkskulTableAdapter" GeneratorDataComponentClassName="DataEkskulTableAdapter" Name="DataEkskul" UserDataComponentName="DataEkskulTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EKSKULConnectionString (MySettings)" DbObjectName="EKSKUL.dbo.DataEkskul" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_ekskul, id_guru, nama_ekskul, foto_ekskul, Expr1, nama_guru, foto_guru FROM dbo.DataEkskul</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_ekskul" DataSetColumn="id_ekskul" />
+              <Mapping SourceColumn="id_guru" DataSetColumn="id_guru" />
+              <Mapping SourceColumn="nama_ekskul" DataSetColumn="nama_ekskul" />
+              <Mapping SourceColumn="foto_ekskul" DataSetColumn="foto_ekskul" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="nama_guru" DataSetColumn="nama_guru" />
+              <Mapping SourceColumn="foto_guru" DataSetColumn="foto_guru" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EKSKULDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EKSKULDataSet9" msprop:Generator_UserDSName="EKSKULDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataEkskul" msprop:Generator_TableClassName="DataEkskulDataTable" msprop:Generator_TableVarName="tableDataEkskul" msprop:Generator_TablePropName="DataEkskul" msprop:Generator_RowDeletingName="DataEkskulRowDeleting" msprop:Generator_RowChangingName="DataEkskulRowChanging" msprop:Generator_RowEvHandlerName="DataEkskulRowChangeEventHandler" msprop:Generator_RowDeletedName="DataEkskulRowDeleted" msprop:Generator_UserTableName="DataEkskul" msprop:Generator_RowChangedName="DataEkskulRowChanged" msprop:Generator_RowEvArgName="DataEkskulRowChangeEvent" msprop:Generator_RowClassName="DataEkskulRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_ekskul" msprop:Generator_ColumnVarNameInTable="columnid_ekskul" msprop:Generator_ColumnPropNameInRow="id_ekskul" msprop:Generator_ColumnPropNameInTable="id_ekskulColumn" msprop:Generator_UserColumnName="id_ekskul" type="xs:int" />
+              <xs:element name="id_guru" msprop:Generator_ColumnVarNameInTable="columnid_guru" msprop:Generator_ColumnPropNameInRow="id_guru" msprop:Generator_ColumnPropNameInTable="id_guruColumn" msprop:Generator_UserColumnName="id_guru" type="xs:int" />
+              <xs:element name="nama_ekskul" msprop:Generator_ColumnVarNameInTable="columnnama_ekskul" msprop:Generator_ColumnPropNameInRow="nama_ekskul" msprop:Generator_ColumnPropNameInTable="nama_ekskulColumn" msprop:Generator_UserColumnName="nama_ekskul">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foto_ekskul" msprop:Generator_ColumnVarNameInTable="columnfoto_ekskul" msprop:Generator_ColumnPropNameInRow="foto_ekskul" msprop:Generator_ColumnPropNameInTable="foto_ekskulColumn" msprop:Generator_UserColumnName="foto_ekskul" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" />
+              <xs:element name="nama_guru" msprop:Generator_ColumnVarNameInTable="columnnama_guru" msprop:Generator_ColumnPropNameInRow="nama_guru" msprop:Generator_ColumnPropNameInTable="nama_guruColumn" msprop:Generator_UserColumnName="nama_guru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foto_guru" msprop:Generator_ColumnVarNameInTable="columnfoto_guru" msprop:Generator_ColumnPropNameInRow="foto_guru" msprop:Generator_ColumnPropNameInTable="foto_guruColumn" msprop:Generator_UserColumnName="foto_guru" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataEkskul" />
+      <xs:field xpath="mstns:id_ekskul" />
+      <xs:field xpath="mstns:Expr1" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

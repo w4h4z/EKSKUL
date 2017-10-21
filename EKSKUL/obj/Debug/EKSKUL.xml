@@ -1,0 +1,891 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EKSKUL
+</name>
+</assembly>
+<members>
+<member name="T:EKSKUL.EKSKULDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.EkskulDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.GuruDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.JadwalEkskulDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.NilaiEkskulDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.SiswaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.EkskulRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.GuruRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.JadwalEkskulRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.NilaiEkskulRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.SiswaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.EkskulRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.GuruRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.JadwalEkskulRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.NilaiEkskulRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet.SiswaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.EkskulTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.GuruTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.JadwalEkskulTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.NilaiEkskulTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.SiswaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1.ViewEkskulDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1.ViewEkskulRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1.ViewEkskulRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1TableAdapters.ViewEkskulTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10.testDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10.testRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10.testRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10TableAdapters.testTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet10,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet10,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet10,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet10)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet10TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11.View_1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11.View_1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11.View_1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11TableAdapters.View_1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet11,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet11,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet11,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet11)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet11TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2.JadwalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2.JadwalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2.JadwalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2TableAdapters.JadwalTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3.GuruDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3.GuruRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3.GuruRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3TableAdapters.GuruTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4.EkskulDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4.EkskulRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4.EkskulRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4TableAdapters.EkskulTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet4)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5.SiswaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5.SiswaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5.SiswaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5TableAdapters.SiswaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet5)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6.NilaiEkskulDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6.NilaiEkskulRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6.NilaiEkskulRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6TableAdapters.NilaiEkskulTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet6,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet6)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet6TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7.SoalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7.SoalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7.SoalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7TableAdapters.SoalTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet7,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet7)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet7TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8.JadwalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8.JadwalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8.JadwalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8TableAdapters.JadwalTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet8,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet8)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet8TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9.DataEkskulDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9.DataEkskulRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9.DataEkskulRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9TableAdapters.DataEkskulTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager.UpdateUpdatedRows(EKSKUL.EKSKULDataSet9,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager.UpdateInsertedRows(EKSKUL.EKSKULDataSet9,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager.UpdateDeletedRows(EKSKUL.EKSKULDataSet9,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager.UpdateAll(EKSKUL.EKSKULDataSet9)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:EKSKUL.EKSKULDataSet9TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:EKSKUL.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:EKSKUL.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:EKSKUL.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:EKSKUL.My.Resources.Resources.profil">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

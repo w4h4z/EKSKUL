@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EKSKULDataSet8" targetNamespace="http://tempuri.org/EKSKULDataSet8.xsd" xmlns:mstns="http://tempuri.org/EKSKULDataSet8.xsd" xmlns="http://tempuri.org/EKSKULDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="EKSKULConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EKSKULConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EKSKUL.My.MySettings.GlobalReference.Default.EKSKULConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="JadwalTableAdapter" GeneratorDataComponentClassName="JadwalTableAdapter" Name="Jadwal" UserDataComponentName="JadwalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EKSKULConnectionString (MySettings)" DbObjectName="EKSKUL.dbo.Jadwal" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_ekskul, id_guru, nama_ekskul, id_jadwal, hari_ekskul, jam_ekskul, nama_guru FROM dbo.Jadwal</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_ekskul" DataSetColumn="id_ekskul" />
+              <Mapping SourceColumn="id_guru" DataSetColumn="id_guru" />
+              <Mapping SourceColumn="nama_ekskul" DataSetColumn="nama_ekskul" />
+              <Mapping SourceColumn="id_jadwal" DataSetColumn="id_jadwal" />
+              <Mapping SourceColumn="hari_ekskul" DataSetColumn="hari_ekskul" />
+              <Mapping SourceColumn="jam_ekskul" DataSetColumn="jam_ekskul" />
+              <Mapping SourceColumn="nama_guru" DataSetColumn="nama_guru" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EKSKULDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EKSKULDataSet8" msprop:Generator_UserDSName="EKSKULDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Jadwal" msprop:Generator_TableClassName="JadwalDataTable" msprop:Generator_TableVarName="tableJadwal" msprop:Generator_TablePropName="Jadwal" msprop:Generator_RowDeletingName="JadwalRowDeleting" msprop:Generator_RowChangingName="JadwalRowChanging" msprop:Generator_RowEvHandlerName="JadwalRowChangeEventHandler" msprop:Generator_RowDeletedName="JadwalRowDeleted" msprop:Generator_UserTableName="Jadwal" msprop:Generator_RowChangedName="JadwalRowChanged" msprop:Generator_RowEvArgName="JadwalRowChangeEvent" msprop:Generator_RowClassName="JadwalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_ekskul" msprop:Generator_ColumnVarNameInTable="columnid_ekskul" msprop:Generator_ColumnPropNameInRow="id_ekskul" msprop:Generator_ColumnPropNameInTable="id_ekskulColumn" msprop:Generator_UserColumnName="id_ekskul" type="xs:int" />
+              <xs:element name="id_guru" msprop:Generator_ColumnVarNameInTable="columnid_guru" msprop:Generator_ColumnPropNameInRow="id_guru" msprop:Generator_ColumnPropNameInTable="id_guruColumn" msprop:Generator_UserColumnName="id_guru" type="xs:int" />
+              <xs:element name="nama_ekskul" msprop:Generator_ColumnVarNameInTable="columnnama_ekskul" msprop:Generator_ColumnPropNameInRow="nama_ekskul" msprop:Generator_ColumnPropNameInTable="nama_ekskulColumn" msprop:Generator_UserColumnName="nama_ekskul">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_jadwal" msprop:Generator_ColumnVarNameInTable="columnid_jadwal" msprop:Generator_ColumnPropNameInRow="id_jadwal" msprop:Generator_ColumnPropNameInTable="id_jadwalColumn" msprop:Generator_UserColumnName="id_jadwal" type="xs:int" />
+              <xs:element name="hari_ekskul" msprop:Generator_ColumnVarNameInTable="columnhari_ekskul" msprop:Generator_ColumnPropNameInRow="hari_ekskul" msprop:Generator_ColumnPropNameInTable="hari_ekskulColumn" msprop:Generator_UserColumnName="hari_ekskul">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jam_ekskul" msprop:Generator_ColumnVarNameInTable="columnjam_ekskul" msprop:Generator_ColumnPropNameInRow="jam_ekskul" msprop:Generator_ColumnPropNameInTable="jam_ekskulColumn" msprop:Generator_UserColumnName="jam_ekskul">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_guru" msprop:Generator_ColumnVarNameInTable="columnnama_guru" msprop:Generator_ColumnPropNameInRow="nama_guru" msprop:Generator_ColumnPropNameInTable="nama_guruColumn" msprop:Generator_UserColumnName="nama_guru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

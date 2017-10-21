@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EKSKULDataSet7" targetNamespace="http://tempuri.org/EKSKULDataSet7.xsd" xmlns:mstns="http://tempuri.org/EKSKULDataSet7.xsd" xmlns="http://tempuri.org/EKSKULDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="EKSKULConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EKSKULConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EKSKUL.My.MySettings.GlobalReference.Default.EKSKULConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SoalTableAdapter" GeneratorDataComponentClassName="SoalTableAdapter" Name="Soal" UserDataComponentName="SoalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EKSKULConnectionString (MySettings)" DbObjectName="EKSKUL.dbo.Soal" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_nilai, id_siswa, id_guru, nilai_mid, nilai_final, soal_mid, soal_final, Expr1, id_ekskul, nama_siswa, tgl_lahir_siswa, telp_siswa, jenis_kelamin, asal_sekolah, foto_siswa FROM dbo.Soal</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_nilai" DataSetColumn="id_nilai" />
+              <Mapping SourceColumn="id_siswa" DataSetColumn="id_siswa" />
+              <Mapping SourceColumn="id_guru" DataSetColumn="id_guru" />
+              <Mapping SourceColumn="nilai_mid" DataSetColumn="nilai_mid" />
+              <Mapping SourceColumn="nilai_final" DataSetColumn="nilai_final" />
+              <Mapping SourceColumn="soal_mid" DataSetColumn="soal_mid" />
+              <Mapping SourceColumn="soal_final" DataSetColumn="soal_final" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="id_ekskul" DataSetColumn="id_ekskul" />
+              <Mapping SourceColumn="nama_siswa" DataSetColumn="nama_siswa" />
+              <Mapping SourceColumn="tgl_lahir_siswa" DataSetColumn="tgl_lahir_siswa" />
+              <Mapping SourceColumn="telp_siswa" DataSetColumn="telp_siswa" />
+              <Mapping SourceColumn="jenis_kelamin" DataSetColumn="jenis_kelamin" />
+              <Mapping SourceColumn="asal_sekolah" DataSetColumn="asal_sekolah" />
+              <Mapping SourceColumn="foto_siswa" DataSetColumn="foto_siswa" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EKSKULDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EKSKULDataSet7" msprop:Generator_UserDSName="EKSKULDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Soal" msprop:Generator_TableClassName="SoalDataTable" msprop:Generator_TableVarName="tableSoal" msprop:Generator_TablePropName="Soal" msprop:Generator_RowDeletingName="SoalRowDeleting" msprop:Generator_RowChangingName="SoalRowChanging" msprop:Generator_RowEvHandlerName="SoalRowChangeEventHandler" msprop:Generator_RowDeletedName="SoalRowDeleted" msprop:Generator_UserTableName="Soal" msprop:Generator_RowChangedName="SoalRowChanged" msprop:Generator_RowEvArgName="SoalRowChangeEvent" msprop:Generator_RowClassName="SoalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_nilai" msprop:Generator_ColumnVarNameInTable="columnid_nilai" msprop:Generator_ColumnPropNameInRow="id_nilai" msprop:Generator_ColumnPropNameInTable="id_nilaiColumn" msprop:Generator_UserColumnName="id_nilai" type="xs:int" />
+              <xs:element name="id_siswa" msprop:Generator_ColumnVarNameInTable="columnid_siswa" msprop:Generator_ColumnPropNameInRow="id_siswa" msprop:Generator_ColumnPropNameInTable="id_siswaColumn" msprop:Generator_UserColumnName="id_siswa" type="xs:int" />
+              <xs:element name="id_guru" msprop:Generator_ColumnVarNameInTable="columnid_guru" msprop:Generator_ColumnPropNameInRow="id_guru" msprop:Generator_ColumnPropNameInTable="id_guruColumn" msprop:Generator_UserColumnName="id_guru" type="xs:int" />
+              <xs:element name="nilai_mid" msprop:Generator_ColumnVarNameInTable="columnnilai_mid" msprop:Generator_ColumnPropNameInRow="nilai_mid" msprop:Generator_ColumnPropNameInTable="nilai_midColumn" msprop:Generator_UserColumnName="nilai_mid" type="xs:int" minOccurs="0" />
+              <xs:element name="nilai_final" msprop:Generator_ColumnVarNameInTable="columnnilai_final" msprop:Generator_ColumnPropNameInRow="nilai_final" msprop:Generator_ColumnPropNameInTable="nilai_finalColumn" msprop:Generator_UserColumnName="nilai_final" type="xs:int" minOccurs="0" />
+              <xs:element name="soal_mid" msprop:Generator_ColumnVarNameInTable="columnsoal_mid" msprop:Generator_ColumnPropNameInRow="soal_mid" msprop:Generator_ColumnPropNameInTable="soal_midColumn" msprop:Generator_UserColumnName="soal_mid" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="soal_final" msprop:Generator_ColumnVarNameInTable="columnsoal_final" msprop:Generator_ColumnPropNameInRow="soal_final" msprop:Generator_ColumnPropNameInTable="soal_finalColumn" msprop:Generator_UserColumnName="soal_final" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" />
+              <xs:element name="id_ekskul" msprop:Generator_ColumnVarNameInTable="columnid_ekskul" msprop:Generator_ColumnPropNameInRow="id_ekskul" msprop:Generator_ColumnPropNameInTable="id_ekskulColumn" msprop:Generator_UserColumnName="id_ekskul" type="xs:int" minOccurs="0" />
+              <xs:element name="nama_siswa" msprop:Generator_ColumnVarNameInTable="columnnama_siswa" msprop:Generator_ColumnPropNameInRow="nama_siswa" msprop:Generator_ColumnPropNameInTable="nama_siswaColumn" msprop:Generator_UserColumnName="nama_siswa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tgl_lahir_siswa" msprop:Generator_ColumnVarNameInTable="columntgl_lahir_siswa" msprop:Generator_ColumnPropNameInRow="tgl_lahir_siswa" msprop:Generator_ColumnPropNameInTable="tgl_lahir_siswaColumn" msprop:Generator_UserColumnName="tgl_lahir_siswa" type="xs:dateTime" />
+              <xs:element name="telp_siswa" msprop:Generator_ColumnVarNameInTable="columntelp_siswa" msprop:Generator_ColumnPropNameInRow="telp_siswa" msprop:Generator_ColumnPropNameInTable="telp_siswaColumn" msprop:Generator_UserColumnName="telp_siswa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jenis_kelamin" msprop:Generator_ColumnVarNameInTable="columnjenis_kelamin" msprop:Generator_ColumnPropNameInRow="jenis_kelamin" msprop:Generator_ColumnPropNameInTable="jenis_kelaminColumn" msprop:Generator_UserColumnName="jenis_kelamin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="asal_sekolah" msprop:Generator_ColumnVarNameInTable="columnasal_sekolah" msprop:Generator_ColumnPropNameInRow="asal_sekolah" msprop:Generator_ColumnPropNameInTable="asal_sekolahColumn" msprop:Generator_UserColumnName="asal_sekolah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foto_siswa" msprop:Generator_ColumnVarNameInTable="columnfoto_siswa" msprop:Generator_ColumnPropNameInRow="foto_siswa" msprop:Generator_ColumnPropNameInTable="foto_siswaColumn" msprop:Generator_UserColumnName="foto_siswa" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Soal" />
+      <xs:field xpath="mstns:id_nilai" />
+      <xs:field xpath="mstns:Expr1" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+D:\New folder (2)\EKSKUL\EKSKUL\bin\Debug\EKSKUL.exe.config
+D:\New folder (2)\EKSKUL\EKSKUL\bin\Debug\EKSKUL.exe
+D:\New folder (2)\EKSKUL\EKSKUL\bin\Debug\EKSKUL.pdb
+D:\New folder (2)\EKSKUL\EKSKUL\bin\Debug\EKSKUL.xml
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.Admin_Nav.resources
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.Guru_Nav.resources
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.Login_Form.resources
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.Resources.resources
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.Siswa_Nav.resources
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.vbproj.GenerateResource.Cache
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.exe
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.xml
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.pdb
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.vbprojResolveAssemblyReference.cache
+D:\New folder (2)\EKSKUL\EKSKUL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.recapt.resources
+D:\New folder (2)\EKSKUL\EKSKUL\obj\Debug\EKSKUL.test.resources
